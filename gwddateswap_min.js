@@ -1,0 +1,3 @@
+(function(){'use strict';var d=function(){};goog.inherits(d,HTMLElement);d.prototype.attributeChangedCallback=function(){this.checkDate()};
+d.prototype.checkDate=function(){var b=this.getAttribute("from_date"),a=this.getAttribute("to_date");if(b&&a){b=new Date(b);a=new Date(a);var c=this.getAttribute("currentdateoverride");var e=c?new Date(c):new Date;e.setMilliseconds(0);c=e.getTime()-b.getTime();a=e.getTime()-a.getTime();b=!1;0>c?a="before":0<=c&&0>=a?(a="during",b=!0):a="after";c=document.createEvent("Event");c.initEvent(a,!0,!0);this.dispatchEvent(c);b&&"none"==this.style.display?this.style.display="":b||"none"==this.style.display||
+(this.style.display="none")}};document.registerElement("gwd-dateswap",{prototype:d.prototype});}).call(this);

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html style="overflow: auto;">
+
+<head>
+  <meta charset="utf-8">
+  <title>update_stock</title>
+  <meta name="generator" content="Google Web Designer 5.0.4.0226">
+  <style type="text/css" id="gwd-text-style">
+    p {
+      margin: 0px;
+    }
+    h1 {
+      margin: 0px;
+    }
+    h2 {
+      margin: 0px;
+    }
+    h3 {
+      margin: 0px;
+    }
+  </style>
+  <style type="text/css">
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+    body {
+      background-color: transparent;
+      transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      transform-style: preserve-3d;
+    }
+    .gwd-img-6tia {
+      position: absolute;
+      opacity: 1;
+      left: 0px;
+      top: 0px;
+      width: 1366px;
+      height: 768px;
+      transform-origin: 682.678px 383.946px 0px;
+    }
+    .gwd-rect-jknb {
+      position: absolute;
+      box-sizing: border-box;
+      border-width: 2px;
+      border-style: solid;
+      border-color: rgba(255, 255, 255, 0.68);
+      background-image: none;
+      background-color: rgb(0, 0, 0);
+      opacity: 0.7;
+      left: 0px;
+      top: 0px;
+      width: 1366px;
+      height: 768px;
+      transform-origin: 682.668px 383.648px 0px;
+    }
+    .gwd-span-7806 {
+      position: absolute;
+      height: 80px;
+      font-family: Artifika;
+      width: 607px;
+      transform-origin: -410px 45px 0px;
+      left: 414px;
+      color: rgb(255, 255, 255);
+      font-size: 50px;
+      top: 120px;
+    }
+    .gwd-rect-1lcu {
+      position: absolute;
+      width: 602.5px;
+      height: 546.992px;
+      box-sizing: border-box;
+      border-style: solid;
+      border-color: rgba(255, 255, 255, 0.68);
+      background-image: none;
+      background-color: rgb(0, 0, 0);
+      opacity: 0.5;
+      border-width: 10px;
+      border-radius: 40px;
+      left: 415.021px;
+      top: 185.019px;
+      transform-origin: 641.979px 46.981px 0px;
+    }
+    .gwd-span-1q9e {
+      position: absolute;
+      height: 47px;
+      color: rgb(255, 255, 255);
+      top: 250px;
+      left: 487px;
+      width: 239px;
+      transform-origin: 119.5px 23.5px 0px;
+    }
+    .gwd-span-1v1k {
+      position: absolute;
+      color: rgb(255, 255, 255);
+      font-family: Artifika;
+      font-size: 30px;
+      height: 41px;
+      top: 317px;
+      left: 492px;
+      width: 223px;
+      transform-origin: 111.506px 40.9896px 0px;
+    }
+    .gwd-span-1y5a {
+      position: absolute;
+      height: 38px;
+      color: rgb(255, 255, 255);
+      font-family: Artifika;
+      font-weight: normal;
+      font-size: 30px;
+      top: 378px;
+      left: 492px;
+      width: 141px;
+      transform-origin: 70.6362px 18.9844px 0px;
+    }
+    .gwd-span-1rwh {
+      position: absolute;
+      height: 35px;
+      font-family: Artifika;
+      color: rgb(255, 255, 255);
+      font-weight: normal;
+      font-size: 30px;
+      top: 457px;
+      left: 490px;
+      width: 152px;
+      transform-origin: 75.8391px 17.5px 0px;
+    }
+    .gwd-span-1msq {
+      position: absolute;
+      height: 29px;
+      font-family: Artifika;
+      color: rgb(255, 255, 255);
+      font-weight: normal;
+      font-size: 30px;
+      top: 533px;
+      left: 487px;
+      width: 166px;
+      transform-origin: -141.761px 78.3073px 0px;
+    }
+    .gwd-span-1tw6 {
+      position: absolute;
+      height: 41px;
+      font-family: Artifika;
+      color: rgb(255, 255, 255);
+      font-weight: normal;
+      font-size: 30px;
+      top: 608px;
+      left: 487px;
+      width: 179px;
+      transform-origin: 89.3406px 20.4948px 0px;
+    }
+    .gwd-span-1arg {
+      font-family: Artifika;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      font-size: 40px;
+    }
+    .gwd-span-1fpi {
+      font-size: 40px;
+      font-family: Artifika;
+      color: rgb(255, 255, 255);
+      font-weight: normal;
+    }
+    .gwd-span-d221 {
+      font-family: Artifika;
+      font-weight: bold;
+      font-size: 40px;
+      color: rgb(255, 255, 255);
+    }
+    .gwd-input-f4qw {
+      position: absolute;
+      top: 252px;
+      border-radius: 30px;
+      left: 685px;
+      width: 288px;
+      height: 32px;
+      transform-origin: 146px 19px 0px;
+    }
+    .gwd-input-u2lf {
+      position: absolute;
+      border-radius: 30px;
+      top: 315px;
+      left: 685px;
+      width: 288px;
+      height: 29px;
+      transform-origin: 146px 17.5px 0px;
+    }
+    .gwd-input-1uo5 {
+      position: absolute;
+      border-radius: 30px;
+      left: 687px;
+      top: 380px;
+      width: 286px;
+      height: 33px;
+      transform-origin: 145px 19.5px 0px;
+    }
+    .gwd-input-poey {
+      position: absolute;
+      left: 683px;
+      border-radius: 30px;
+      width: 290px;
+      top: 454px;
+      height: 35px;
+      transform-origin: 147px 20.5px 0px;
+    }
+    .gwd-input-axm7 {
+      position: absolute;
+      left: 689px;
+      border-radius: 30px;
+      width: 284px;
+      top: 528px;
+      height: 34px;
+      transform-origin: 144px 20px 0px;
+    }
+    .gwd-input-1y08 {
+      position: absolute;
+      left: 684px;
+      border-radius: 30px;
+      margin: 0px;
+      border-width: 2px;
+      width: 289px;
+      top: 606px;
+      height: 32px;
+      transform-origin: 146.5px 19px 0px;
+    }
+    .gwd-button-fauy {
+      position: absolute;
+      height: 39px;
+      width: 180px;
+      transform-origin: 39px -178px 0px;
+      font-family: Artifika;
+      font-size: 30px;
+      background-image: none;
+      border-width: 5px;
+      border-radius: 10px;
+      background-color: rgb(75, 216, 9);
+      left: 591px;
+      top: 683px;
+      color: rgb(0, 0, 0);
+      border-image-source: none;
+      border-image-width: 1;
+      border-image-outset: 0;
+      border-image-repeat: stretch;
+      border-color: rgb(255, 255, 255);
+    }
+    .gwd-span-qdkv {
+      font-size: 50px;
+    }
+    .gwd-span-cwim {
+      font-family: Artifika;
+      font-size: 30px;
+    }
+    .gwd-button-1pea {
+      position: absolute;
+      width: 180px;
+      background-image: none;
+      background-color: rgb(236, 10, 43);
+      border-radius: 10px;
+      left: 790px;
+      border-width: 5px;
+      top: 682px;
+      height: 41px;
+      transform-origin: 357px -216.038px 0px;
+      font-family: Artifika;
+      font-size: 30px;
+      color: rgb(0, 0, 0);
+      border-image-source: none;
+      border-image-width: 1;
+      border-image-outset: 0;
+      border-image-repeat: stretch;
+      border-color: rgb(255, 255, 255);
+    }
+    .gwd-span-1p4l {
+      position: absolute;
+      left: 180px;
+      top: 245px;
+      color: rgb(255, 255, 255);
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Artifika:regular" rel="stylesheet" type="text/css">
+</head>
+
+<body class="htmlNoPages">
+<form action="update_stock.php" method="post">
+  <img src="assets/img111.jpg" class="gwd-img-6tia">
+  <svg data-gwd-shape="rectangle" class="gwd-rect-jknb"></svg><span class="gwd-span-7806"><span class="gwd-span-qdkv">Update </span>Stock</span>
+  <svg data-gwd-shape="rectangle" class="gwd-rect-1lcu gwd-gen-830agwdanimation"></svg><span class="gwd-span-1q9e"><span class="gwd-span-cwim">Product No</span><br>
+  
+  </span><span class="gwd-span-1v1k">Name</span><span class="gwd-span-1y5a">Brand</span><span class="gwd-span-1rwh">SerialNo</span><span class="gwd-span-1msq">MRP</span><span class="gwd-span-1tw6">Quantity</span>
+  <input type="number" id="number_1" value="0" min="0" max="100000" step="1" class="gwd-input-f4qw" name="id">
+  <input type="text" id="text_1" class="gwd-input-u2lf" name="name">
+  <input type="text" id="text_2" class="gwd-input-1uo5" name="brand">
+  <input type="number" id="number_2" value="0" min="0" max="100000" step="1" class="gwd-input-poey" name="sno">
+  <input type="number" id="number_3" value="0" min="0" max="100000" step="1" class="gwd-input-axm7" name="mrp">
+  <input type="number" id="number_4" value="0" min="0" max="100000" step="1" class="gwd-input-1y08" name="quantity">
+  <input type="submit" id="button_1" class="gwd-button-fauy" value="Update" name="update">
+  <input type="submit" id="button_2" class="gwd-button-1pea" value="cancel"><span class="gwd-span-1p4l" name="cancel"><br></span>
+</form>
+  </body>
+
+</html>
